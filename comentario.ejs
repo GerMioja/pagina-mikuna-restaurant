@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="comentario-form">
+        <h1>Form Comentario</h1>
+        <form action="/comentario" method="POST">
+    
+            <label for="nombre" >Nombre completo</label>
+            <input type="text" name="nombre" required>
+
+            <label for="comentario" >Comentario</label>
+            <input type="text" name="comentario" required>
+
+            <div style="display: inline;">
+                <a href="" class="btn-cancel">Cancelar</a><input type="submit" class="btn-save" value="Save">
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle%>',
+                text: '<%= alertMessage%>',
+                icon: '<%= alertIcon%>',
+                showConfirmButton: <%= showConfirmButton%>,
+                timer: <%= timer%>
+            })
+        </script>
+    <% } %>
+</html>

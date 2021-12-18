@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="register-form">
+        <h1>Form carta</h1>
+        <form action="/carta" method="POST">
+            <label for="nombreL" >plato lunes</label>
+            <input type="text" name="nombre_lunes" required>
+
+            <label for="costoL" >costo lunes</label>
+            <input type="number" name="costo_lunes" required>
+
+
+            <label for="nombreM" >plato martes</label>
+            <input type="text" name="nombre_martes" required>
+
+            <label for="costoM" >costo martes</label>
+            <input type="number" name="costo_martes" required>
+
+
+            <label for="nombreMie" >plato miercoles</label>
+            <input type="text" name="nombre_miercoles" required>
+
+            <label for="costoMie" >costo miercoles</label>
+            <input type="number" name="costo_miercoles" required>
+
+
+            <div style="display: inline;">
+                <input type="submit" class="btn-save" value="Save">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

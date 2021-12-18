@@ -1,0 +1,283 @@
+@import url(datos/css/letras.css);
+
+:root{
+    --color-uno: #ffffff;
+    --color-dos: #F39C12;
+    --color-cuatro: #ffff00;
+    --color-sinco: #00ff00;
+}
+
+body{
+    background: url(imagenes/fondo.jpg);
+    margin: 0px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* login del admin*/
+
+.contenedor__todo .contenedor__login-register{
+    width: 100%;
+    height: 50%;
+    max-width: 300px;
+    position: relative;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    padding: 7rem 3rem;
+    backdrop-filter: blur(0.9px);
+    border-radius: 10px;
+    box-shadow: 5px 9px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+.contenedor__todo 
+.contenedor__login-register 
+.login-form h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.4rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F39C12;
+    text-align: center;
+    text-shadow: 0px 2px 0px #000;
+    padding: 0px;
+    margin: 0px;
+}
+
+.login-form h3{
+    font-weight: 50px;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0px 2px 0px #000;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.contenedor__todo 
+.contenedor__login-register 
+.login-form p{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #fff; 
+    padding: 0px;
+    margin: 1.5px;
+}
+
+.contenedor__todo 
+.contenedor__login-register 
+.formulario__login input{
+    width: 100%;
+    height: 3.3vh;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}
+
+.contenedor__todo 
+.contenedor__login-register 
+.btn-login{
+    font-size: 1rem;
+    font-weight: 700;
+    width: 40%;
+    height: 2rem;
+    border-radius: 6px;
+    background: #F39C12;
+    backdrop-filter: blur(2px);
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    color: #fff;
+}
+.btn-register{
+    font-size: 1rem;
+    font-weight: 700;
+    width: 40%;
+    height: 2rem;
+    border-radius: 6px;
+    background: #fff;
+    backdrop-filter: blur(2px);
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* FONDO-HEXAGONO */
+
+.container img{
+    width: 280px;
+    height: 350px;
+    clip-path: polygon(0 26%, 49% 0, 100% 27%, 100% 75%, 48% 100%, 0 74%);
+}
+
+.container .card1{
+    position: absolute;
+    top: 8rem;
+    left: 6rem;
+    z-index: 100;
+    opacity: 1;
+}
+
+.container .card2{
+    position: absolute;
+    top: 13rem;
+    left: 21rem;
+    z-index: 99;
+    opacity: 1;
+}
+
+.container .card3{
+    position: absolute;
+    top: 26rem;
+    left: 6rem;
+    z-index: 98;
+    opacity: 1;
+}
+
+.container .card4{
+    position: absolute;
+    top: 30rem;
+    left: 21rem;
+    z-index: 97;
+    opacity: 1;
+
+}
+
+.container .card5{
+    position: absolute;
+    top: 8rem;
+    left: 36rem;
+    z-index: 96;
+    opacity: 1;
+}
+
+.container .card6{
+    position: absolute;
+    top: 13rem;
+    left: 51rem;
+    z-index: 95;
+    opacity: 1;
+}
+
+.container .card7{
+    position: absolute;
+    top: 26rem;
+    left: 36rem;
+    z-index: 94;
+    opacity: 1;
+}
+
+.container .card8{
+    position: absolute;
+    top: 30rem;
+    left: 51rem;
+    z-index: 93;
+    opacity: 1;
+
+}
+
+.container .card9{
+    position: absolute;
+    top: 8rem;
+    left: 66rem;
+    z-index: 92;
+    opacity: 1;
+}
+
+.container .card10{
+    position: absolute;
+    top: 13rem;
+    left: 81rem;
+    z-index: 91;
+    opacity: 1;
+}
+
+.container .card11{
+    position: absolute;
+    top: 26rem;
+    left: 66rem;
+    z-index: 90;
+    opacity: 1;
+}
+
+.container .card16{
+    position: absolute;
+    top: 30rem;
+    left: 81rem;
+    z-index: 89;
+    opacity: 1;
+
+}
+
+.container .card13{
+    position: absolute;
+    top: 8rem;
+    left: 96rem;
+    z-index: 88;
+    opacity: 1;
+}
+
+
+.container .card15{
+    position: absolute;
+    top: 26rem;
+    left: 96rem;
+    z-index: 86;
+    opacity: 1;
+}
+
+@media(max-width: 768px) {
+
+    .contenedor__todo 
+    .contenedor__login-register 
+    .formulario__login{
+        font-size: 1%;
+    }
+    .contenedor__todo 
+    .contenedor__login-register 
+    .formulario__login h2{
+        margin-bottom: 2rem;
+    }
+
+    .contenedor__todo 
+    .contenedor__login-register 
+    .formulario__login input{
+        margin-bottom: 1.5rem;
+    }
+
+    .contenedor__todo 
+    .contenedor__login-register 
+    .formulario__login button{
+        margin-top: 3rem;
+    }
+
+    .contenedor__todo .contenedor__login-register{
+        width: 60%;
+    }
+
+    .contenedor__login-register form {
+        position: absolute;
+        top: 2.8rem;
+        width: 80%;
+    }
+
+    /* FONDO HEXAGONAL */
+
+    .container .card1,.container .card2, .container .card3, .container .card4,
+    .container .card5, .container .card6,.container .card7,
+    .container .card8,.container .card9, .container .card10, 
+    .container .card11,.container .card12, .container .card13, 
+    .container .card14,.container .card15, .container .card16{
+        display: none;
+    }
+}

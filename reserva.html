@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="nuevo_css/stylos3.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav__hero">
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Mikuna<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="index.html" class="link ">Inicio</a>
+                    <a href="menu.html" class="link ">Menú</a>
+                    <a href="#" class="link link--active">Reserva</a>
+                    <a href="comentario.html" class="link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container hero__main">  
+            <div class="hero__textos">
+             <h1 class="title"><span class="title--active"> RESERVA  AHORA </span> <b><p> Y separa tu mesa con anticipación</p></b></h1> 
+            </div>
+      
+    <div class="register-form">
+        <h4>DATOS PARA SU RESERVA</h4>
+        <form action="/reserva" method="POST">
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre"  class="controls" required>
+             <p> 
+            <label for="fecha" >Fecha</label>
+            <input type="date" name="fecha" class="controls" required>
+            </p> 
+            <p> 
+            <label for="hora">Hora</label>
+            <input type="time" name="hora"class="controls"></p>
+
+             <p><label for="cantidad">Cantidad</label>
+            <input type="number" name="cantidad"class="controls" required></p>
+
+            <p><label for="telefono">Telefono</label>
+            <input type="number" name="telefono"class="controls"required></p>
+
+            <div style="display: inline;">
+                <input type="submit" class="btn-save" value="Save">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle%>',
+                text: '<%= alertMessage%>',
+                icon: '<%= alertIcon%>',
+                showConfirmButton: <%= showConfirmButton%>,
+                timer: <%= timer%>
+            })
+        </script>
+    <% } %>
+
+</body>
+</html>
